@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>cls one</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h2>{{ myName() }}</h2>
+        <h2>{{ myAge(22) }}</h2>
+    </div>
+
+    
+    <script>
+        let ab = new Vue({
+            el: '#app',
+            data: {
+                name: 'hello'
+            },
+
+            methods: {
+                myName() {
+                    return 'welcome to Vuijs'
+                }, 
+
+                myAge(age) {
+                    return `${this.name}, my age is ${age}`
+                }
+            }
+        })
+    </script>
+</body>
+</html>
