@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event objects</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style>
+        .campus{
+            height: 200px;
+            width: 240px;
+            margin-top: 20px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app4">
+        <button @click="me">click me</button>
+
+        <div class="campus" @mousemove="over">
+            {{ log.x }}, {{ log.y }}
+        </div>
+    </div>
+
+    
+    <script>
+        let ab = new Vue({
+            el: '#app4',
+            data: {
+                log: {
+                    x: 0,
+                    y: 0
+                }
+            },
+
+            methods: {
+               me(e) {
+                    console.log(e);
+               },
+
+               over(event) {
+                   this.log.x = event.offsetX
+                   this.log.y = event.offsetY
+               }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>v-for loop</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="app4">
+        <ol>
+            <li v-for="row in names">{{ row }}</li>
+        </ol>
+
+        <ul>
+            <li v-for="(food, idx) in fruits">{{ idx }} => {{ food.name }} || {{ food.color }} || {{ food.weight }}</li>
+        </ul>
+    </div>
+
+    
+    <script>
+        let ab = new Vue({
+            el: '#app4',
+            data: {
+                names: ['kamal', 'jamal', 'tarek', 'kawser', 'osman', 'fahad'],
+                fruits: [
+                    {name: 'Apple', color: 'green', weight: 80},
+                    {name: 'Orange', color: 'orange', weight: 110},
+                    {name: 'banana', color: 'Yellow', weight: 40},
+                    {name: 'Mango', color: 'green', weight: 210}
+                ]
+            },
+
+        })
+    </script>
+</body>
+</html>
