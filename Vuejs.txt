@@ -1,8 +1,9 @@
-
+error(npm cache clean --force
+, )
 
 1. (support, instance, elements, cdn)  
 2. (methods, blade)
-3. (one way data bindind, v-bind: = :)
+3. (one way data binding, v-bind: = :)
 4. (events, v-on: = @)
 5. (object event)
 6. (keyboard event, @keyup, @keypress)
@@ -12,6 +13,9 @@
 10. (v-for, )
 11. (vue CLI install, vue cli দ্বারা ১টা প্রোজেক্ট ইন্সটল, ও প্রোজেক্ট টা সারভার এ রান করা)npm run serve
 12. (components & vuefiles, )
+13. (data function, app.vue holo route component)
+14. (nested component, return object er modde 1ta property declare korlam)
+15. ()
 
 
 
